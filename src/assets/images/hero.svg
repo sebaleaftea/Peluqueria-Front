@@ -1,0 +1,22 @@
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900' width='1600' height='900'>
+  <defs>
+    <linearGradient id='grad' x1='0' y1='0' x2='0' y2='1'>
+      <stop offset='0%' stop-color='#0a0a0c'/>
+      <stop offset='100%' stop-color='#151518'/>
+    </linearGradient>
+    <linearGradient id='gold' x1='0' y1='0' x2='1' y2='0'>
+      <stop offset='0%' stop-color='#d4af37'/>
+      <stop offset='100%' stop-color='#b38e2e'/>
+    </linearGradient>
+  </defs>
+  <rect width='1600' height='900' fill='url(#grad)'/>
+  <g opacity='0.08' fill='none' stroke='#fff'>
+    <path d='M0 720 C200 700 300 760 500 740 C650 725 820 700 1000 720 C1200 740 1400 700 1600 720' />
+    <path d='M0 620 C220 600 320 660 520 640 C670 625 840 600 1020 620 C1220 640 1420 600 1600 620' />
+    <path d='M0 520 C240 500 340 560 540 540 C690 525 860 500 1040 520 C1240 540 1440 500 1600 520' />
+  </g>
+  <g>
+    <circle cx='1400' cy='200' r='120' fill='none' stroke='url(#gold)' stroke-width='6' opacity='0.5'/>
+    <circle cx='200' cy='700' r='90' fill='none' stroke='url(#gold)' stroke-width='4' opacity='0.35'/>
+  </g>
+</svg>

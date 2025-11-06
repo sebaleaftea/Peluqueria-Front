@@ -1,0 +1,69 @@
+:root {
+  --bg-dark: #0e0e10;
+  --bg-darker: #0a0a0c;
+  --text-light: #f5f5f5;
+  --muted: #b4b4b4;
+  --gold: #d4af37;
+  --gold-600: #b38e2e;
+  --gold-700: #8f7125;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: var(--bg-dark);
+  color: var(--text-light);
+  font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', sans-serif;
+  line-height: 1.5;
+}
+
+/* Smooth scroll */
+html { scroll-behavior: smooth; }
+
+/* Theming helpers */
+.bg-dark-gradient {
+  background: linear-gradient(180deg, var(--bg-darker), var(--bg-dark));
+}
+.text-gold { color: var(--gold) !important; }
+.border-gold { border-color: var(--gold) !important; }
+.btn-gold {
+  --bs-btn-color: #111;
+  --bs-btn-bg: var(--gold);
+  --bs-btn-border-color: var(--gold);
+  --bs-btn-hover-bg: var(--gold-600);
+  --bs-btn-hover-border-color: var(--gold-600);
+  --bs-btn-active-bg: var(--gold-700);
+  --bs-btn-active-border-color: var(--gold-700);
+}
+
+.section {
+  padding: 5rem 0;
+}
+
+.section-title {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.card-dark {
+  background: #151518;
+  border: 1px solid rgba(212, 175, 55, 0.18);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+.card-dark:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,.4);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--muted);
+}
+.navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--gold);
+}
+
+.hero-overlay {
+  background: linear-gradient( to bottom, rgba(0,0,0,.6), rgba(0,0,0,.4) );
+}
